@@ -1,0 +1,54 @@
+<script>
+  import { onDestroy } from 'svelte';
+  import { experience } from "$lib/experience";
+  import { active } from '$lib/threads';
+
+  let filtered = $state(experience);
+
+  /**
+   * Set intersection on arrays
+   * @type {boolean}
+   * @param {string[]} a
+   * @param {string[]} b
+   */
+  function intersect(a, b) {
+    for (const t of a) {
+      if (b.includes(t)) return true;
+    }
+    return false;
+  }
+
+  const unsubscribe = active.subscribe((threads) => {
+		filtered = experience.filter(e => intersect(threads, e.threads));
+	});
+
+	onDestroy(unsubscribe);
+</script>
+
+<section class="section">
+  <h2 class="title">Experience</h2>
+
+  <div class="container">
+    {#each filtered as e}
+      <div class="columns">
+        <div class="column is-one-third">
+          <div><strong>{e.company}</strong></div>
+          <div>{e.dates}</div>
+        </div>
+        <div class="column">
+          <p><strong>{e.position}</strong></p>
+          <ul class="pb-2">
+            {#each e.highlights as h}
+              <li><span class="icon is-small"><i class="fa-solid fa-minus"></i></span>&nbsp;{h}</li>
+            {/each}
+          </ul>
+          <div class="tags">
+            {#each e.tech as t}
+              <div class="tag">{t}</div>
+            {/each}
+          </div>
+        </div>
+      </div>
+    {/each}
+  </div>
+</section>
