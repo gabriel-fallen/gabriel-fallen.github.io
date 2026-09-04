@@ -5,7 +5,7 @@
 </script>
 
 <section class="section is-medium">
-  <h1 class="title">Alexander Chichigin</h1>
+  <h1 class="title is-size-2">Alexander Chichigin</h1>
 
   <div class="level">
     <div class="level-item">
