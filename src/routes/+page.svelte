@@ -28,6 +28,23 @@
 
   <Projects />
 
+  <section class="section">
+    <h2 class="title">Education</h2>
+
+    <div class="container">
+        <div class="columns">
+          <div class="column is-one-third">
+            <div><strong>Irkutsk State University</strong></div>
+            <div>2003 — 2008</div>
+          </div>
+          <div class="column">
+            <p><strong>Specialist Degree in Physics, summa cum laude</strong></p>
+            <p>Thesis: Computational model of a recombination process in the Sun's photosphere</p>
+          </div>
+        </div>
+    </div>
+  </section>
+
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
