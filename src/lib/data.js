@@ -11,6 +11,18 @@ export const projects = [
     "text": "A Web standards-based Single Page/Mobile app suggesting outfits to combine out of clothes you have.",
     "tech": ["JavaScript", "React", "Immer.js", "PouchDB", "Android"],
     "threads": ["Web"]
+  },
+  {
+    "name": { "href": "https://github.com/gabriel-fallen/krivine-extended", "title": "Krivine abstract machine" },
+    "text": "Two implementations: one in <a href=\"https://github.com/gabriel-fallen/krivine-extended\">Haskell</a>, another in <a href=\"https://github.com/gabriel-fallen/rusty-krivine\">Rust</a>. The first one emerged out of a research question \"how much automatic parallelism can we obtain from a pure λ-calculus?\" The second one — out of an engineering question \"can we outrun Haskell with Rust?\" ",
+    "tech": ["Haskell", "Rust"],
+    "threads": ["programming languages", "performance", "research"]
+  },
+  {
+    "name": { "href": "https://github.com/gabriel-fallen/rendezvous", "title": "Rendezvous" },
+    "text": "A mobile and desktop GUI browser for the Gemini protocol. Flutter allows you to transfer many techniques from Web development (React-like widgets, state management, etc.) to mobile, while implementing low-level protocol exercises many programming language concepts (parsing, transformation and so on).",
+    "tech": ["Dart", "Flutter", "Android"],
+    "threads": ["Web", "programming languages"]
   }
 ];
 
@@ -200,7 +212,7 @@ export const experience = [
     "company": "Various",
     "position": "Software Developer",
     "country": "Kazan, Russia",
-    "dates": "2011 - 2013",
+    "dates": "2007 - 2013",
     "threads": ["Web", "performance"],
     "tech": [
       "Java",
@@ -214,7 +226,9 @@ export const experience = [
     "highlights": [
       "Web application development in Java, Clojure, Python",
       "Telecom projects in Java and C#",
-      "Embedded development in C/C++"
+      "CAD/CAM development",
+      "Embedded development in C/C++",
+      "Linux driver development"
     ]
   }
 ];
