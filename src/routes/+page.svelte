@@ -1,5 +1,6 @@
 <script>
   import Experience from "$lib/components/experience.svelte";
+  import Projects from "$lib/components/projects.svelte";
   import Threads from "$lib/components/threads.svelte";
 </script>
 
@@ -24,6 +25,8 @@
   <Threads />
 
   <Experience />
+
+  <Projects />
 
   <footer class="footer">
     <div class="content has-text-centered">

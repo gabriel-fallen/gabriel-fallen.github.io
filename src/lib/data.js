@@ -1,4 +1,19 @@
 
+export const projects = [
+  {
+    "name": { "href": "https://huggingface.co/spaces/gabriel-fallen/sickofmyjob", "title": "I'm sick of my job" },
+    "text": "A demo of an end-to-end data-driven Web application. Showcases Machine Learning, cross-validation, model selection, loading and use in a Web app. Full source code on <a href=\"https://github.com/gabriel-fallen/attrition\">Github</a>.",
+    "tech": ["Orange", "Python", "Flask", "JavaScript", "HTML5"],
+    "threads": ["Web", "data analysis"]
+  },
+  {
+    "name": { "href": "https://combineclothes.com", "title": "MixDress"},
+    "text": "A Web standards-based Single Page/Mobile app suggesting outfits to combine out of clothes you have.",
+    "tech": ["JavaScript", "React", "Immer.js", "PouchDB", "Android"],
+    "threads": ["Web"]
+  }
+];
+
 export const experience = [
   {
     "company": "Consulting",
@@ -203,3 +218,16 @@ export const experience = [
     ]
   }
 ];
+
+/**
+ * Set intersection on arrays
+ * @type {boolean}
+ * @param {string[]} a
+ * @param {string[]} b
+ */
+export function intersect(a, b) {
+  for (const t of a) {
+    if (b.includes(t)) return true;
+  }
+  return false;
+}

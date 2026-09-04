@@ -1,22 +1,9 @@
 <script>
   import { onDestroy } from 'svelte';
-  import { experience } from "$lib/experience";
+  import { experience, intersect } from '$lib/data';
   import { active } from '$lib/threads';
 
   let filtered = $state(experience);
-
-  /**
-   * Set intersection on arrays
-   * @type {boolean}
-   * @param {string[]} a
-   * @param {string[]} b
-   */
-  function intersect(a, b) {
-    for (const t of a) {
-      if (b.includes(t)) return true;
-    }
-    return false;
-  }
 
   const unsubscribe = active.subscribe((threads) => {
 		filtered = experience.filter(e => intersect(threads, e.threads));
