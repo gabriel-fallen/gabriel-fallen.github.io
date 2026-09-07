@@ -65,7 +65,9 @@ export const experience = [
       "React",
       "QGIS",
       "PostgreSQL",
-      "DuckDB"
+      "DuckDB",
+      "Docker",
+      "Docker Compose"
     ],
     "highlights": [
       "Integrated PayPal Subscriptions Billing system, automating recurring payments and customer lifecycle monitoring",
