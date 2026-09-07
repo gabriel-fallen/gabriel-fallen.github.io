@@ -1,5 +1,5 @@
 <script>
-  import { threads, active } from '$lib/threads';
+  import { threads, active } from '$lib/store';
 
   const toggle = (t) => {
     if ( $active.includes(t) ) active.update(as => [...as.filter(a => a !== t)]);

@@ -1,22 +1,12 @@
 <script>
-  import { onDestroy } from 'svelte';
-  import { experience, intersect } from '$lib/data';
-  import { active } from '$lib/threads';
-
-  let filtered = $state(experience);
-
-  const unsubscribe = active.subscribe((threads) => {
-		filtered = experience.filter(e => intersect(threads, e.threads));
-	});
-
-	onDestroy(unsubscribe);
+  import { active_experience } from '$lib/store';
 </script>
 
 <section class="section">
   <h2 class="title">Experience</h2>
 
   <div class="container">
-    {#each filtered as e}
+    {#each $active_experience as e}
       <div class="columns">
         <div class="column is-one-third">
           <div><strong>{e.company}</strong></div>

@@ -1,22 +1,12 @@
 <script>
-  import { onDestroy } from "svelte";
-  import { projects, intersect } from '$lib/data';
-  import { active } from '$lib/threads';
-
-  let filtered = $state(projects);
-
-  const unsubscribe = active.subscribe((threads) => {
-		filtered = projects.filter(p => intersect(threads, p.threads));
-	});
-
-	onDestroy(unsubscribe);
+  import { active_projects } from '$lib/store';
 </script>
 
 <section class="section">
   <h2 class="title">Projects</h2>
 
   <div class="container">
-    {#each filtered as p}
+    {#each $active_projects as p}
       <div class="card">
         <header class="card-header">
           <p class="card-header-title"><a href="{p.name.href}"><strong>{p.name.title}</strong></a></p>
