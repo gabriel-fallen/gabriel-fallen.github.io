@@ -2,6 +2,7 @@
   import Experience from "$lib/components/experience.svelte";
   import Projects from "$lib/components/projects.svelte";
   import Threads from "$lib/components/threads.svelte";
+  import TechTable from "$lib/components/tech_table.svelte";
 </script>
 
 <section class="section is-medium">
@@ -23,6 +24,8 @@
   </div>
 
   <Threads />
+
+  <TechTable />
 
   <Experience />
 

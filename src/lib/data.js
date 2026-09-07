@@ -245,3 +245,26 @@ export function intersect(a, b) {
   }
   return false;
 }
+
+function toYearMonth(str) {
+  const r = str.trim().split(/\s+/);
+  const [monthStr, yearStr] = (r.length > 1) ? r : ['Jan', r[0]];
+  let year = parseInt(yearStr, 10);
+  if (isNaN(year)) year = Temporal.Now.instant().toZonedDateTimeISO('UTC').year;
+
+  const months = {
+    Jan: 1, Feb: 2, Mar: 3, Apr: 4, May: 5, Jun: 6,
+    Jul: 7, Aug: 8, Sep: 9, Oct: 10, Nov: 11, Dec: 12
+  };
+
+  // Pass an object directly into Temporal
+  return Temporal.PlainYearMonth.from({
+    year: year,
+    month: months[monthStr]
+  });
+}
+
+export function datesDiff(str) {
+  const [begin, end] = str.trim().split('-').map(toYearMonth);
+  return end.since(begin);
+}
