@@ -31,6 +31,35 @@
 
   <Projects />
 
+<section class="section">
+  <h2 class="title">Tying the knot</h2>
+
+  <p class="pb-4">
+    The threads are not disjoint either. All of them stem from my innate curiosity. At school, I was curious
+    about how computers work, and that led me to learn x86 Assembly and microarchitecture, OS and
+    file systems, network protocols and services. This helped me develop performance engineering skills.
+    Curiosity about programming languages drove me to learn a bunch, and to study how they are made:
+    parsers, interpreters, compilers, virtual machines, GC. Many of these topics lead to programming
+    language semantics, which is a branch of computer science and, ultimately, mathematics. And within
+    mathematics, I discovered statistics and data analysis, which connected me back with performance and
+    systems engineering.
+  </p>
+  <p class="pb-4">
+    Persistent, systematic curiosity is what we call research. The appeal of deep research into complex topics
+    attracted me to university culture. And when you learn a lot about something you're passionate about,
+    that drives you to share it with others, to teach people. For with a university offers both ample
+    opportunity and professional training.
+  </p>
+  <p class="pb-4">
+    The modern Web provides a technological playground where different programming languages compete against
+    one another, and the same languages are stretched from back-end to front. Optimising JavaScript for a JIT compiler,
+    orchestrating microservices, building high-throughput data pipelines for complex transformations, and everything
+    in between offer many opportunities to apply both state-of-the-art research and solid engineering.
+    I am still curious about what is possible with WebAssembly, WebGPU, edge computing, edge machine learning,
+    and other emerging technologies.
+  </p>
+</section>
+
   <section class="section">
     <h2 class="title">Education</h2>
 
