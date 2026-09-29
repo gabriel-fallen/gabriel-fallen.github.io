@@ -150,7 +150,9 @@ export const experience = [
       "C#",
       "F#",
       ".NET Core",
-      "ANTLR"
+      "ANTLR",
+      "TypeScript",
+      "Python"
     ],
     "highlights": [
       "Development of a Static Application Security Testing system",
@@ -184,7 +186,11 @@ export const experience = [
     "country": "Innopolis, Russia",
     "dates": "Oct 2014 - Dec 2016",
     "threads": ["research", "teaching", "Web", "programming languages"],
-    "tech": [],
+    "tech": [
+      "Java",
+      "Scala",
+      "Julia"
+    ],
     "highlights": [
       "BioDynaMo joint project with Newcastle University, CERN openlab and Kazan Federal University: Lead a team of 5 students investigating the appropriate distributed computing platform",
       "Supervised two undergraduate theses on Jolie programming language",
@@ -220,6 +226,7 @@ export const experience = [
       "Java",
       "JavaEE",
       "Spring",
+      "Spring Boot",
       "Spring Security",
       "WebSockets",
       "Python",
